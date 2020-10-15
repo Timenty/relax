@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0"/>
+		<title>Relax</title>
+		<link rel="stylesheet" href="css/normalize.min.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<header>
+		</header>
+		<main>
+			<div id="scene">
+<!-- 				<div class="parallax-layer" data-depth="1.4">
+					<img src="img/sky.png" alt="">
+				</div> -->
+				<div class="parallax-layer" data-depth="1.1" id="sky">
+<!-- 					<img src="img/clouds_1.png" alt=""> -->
+					<img src="img/clouds_1-middle.png" alt="" id="cloud-back-middle">
+					<img src="img/clouds_1-top.png" alt="" id="cloud-back-top">
+				</div>
+				<div class="parallax-layer" data-depth="0.9" id="rock">
+					<img src="img/rocks.png" alt="">
+				</div>
+				<div class="parallax-layer" data-depth="0.8">
+					<img src="img/clouds_2.png" alt="">
+				</div>
+				<div class="parallax-layer" data-depth="0.6">
+					<img src="img/ground_1.png" alt="">
+				</div>
+				<div class="parallax-layer" data-depth="0.4">
+					<img src="img/ground_2.png" alt="">
+				</div>
+				<div class="parallax-layer" data-depth="0.2">
+					<img src="img/ground_3.png" alt="">
+				</div>
+				<div class="parallax-layer" data-depth="0.1">
+					<img src="img/plant.png" alt="">
+				</div>
+			</div>
+		</main>
+		<footer>
+			<script src="js/jquery-3.3.1.slim.min.js"></script>
+			<script src="js/parallax.js"></script>
+			<script>
+				var scene = document.getElementById('scene');
+				var parallaxInstance = new Parallax(scene);
+			</script>
+		</footer>
+	</body>
+</html>

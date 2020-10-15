@@ -1,0 +1,86 @@
+body{
+	height: auto;
+	width: auto;
+	margin: 0;
+}
+main{
+	width:  -webkit-fill-available;
+	height:  -webkit-fill-available;
+}
+#scene{
+	width: 100%;
+	height: inherit;
+	overflow:hidden;
+	position: fixed;
+	background-image: url(../img/sky.png);	
+}
+.parallax-layer{
+	width: 110%;
+	height: 110%;
+	display: flex!important;
+	align-items: center;
+}
+@media screen and (max-width: 1300px) {
+	.parallax-layer {
+		top: 6vh !important;
+	}
+}
+@media screen and (max-width: 1124px) {
+	.parallax-layer {
+		top: 10vh !important;
+	}
+}
+@media screen and (max-width: 900px) {
+	.parallax-layer {
+		top: 30vh !important;
+	}
+}
+.parallax-layer img{
+  /* margin: 0 0 0 -25%; */
+  margin: 0 0 0 0;
+  position: relative;
+  width: 120%;
+}
+.title{
+	width: 100px;
+	height: 60px;
+	background-color: white;
+}
+#rock{
+	filter: blur(2px);
+}
+#sky{
+	filter: blur(2px);
+}
+#cloud-back-middle{
+	position: relative;
+	animation-name: cloud-moviem;
+    animation-duration: 160s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#cloud-back-top{
+	position: relative;
+	bottom: 250px;
+    left: 100%;
+    animation-name: cloud-movietop;
+    animation-duration: 240s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud-movietop{
+	from{
+		left: 100%;
+	} 
+	to {
+	left: -100%;
+	}
+}
+@keyframes cloud-moviem{
+	from{
+		left: 100%;
+	} 
+	to {
+	left: -100%;
+	}
+}
